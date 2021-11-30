@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    android:background="@drawable/back1"
+    tools:context=".TwoNameActivity">
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playeronewall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="Enter your Name"
+        android:textColor="#DC000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/playeronewall2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+
+        android:layout_alignStart="@+id/button2"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="209dp"
+        android:hint="Player 1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/playerone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:background="@color/transparent"
+            android:maxLength="6"
+
+            android:inputType="textPersonName|textCapWords"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/playeronewall"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playeronewall2"
+        android:layout_alignParentBottom="false"
+        android:layout_gravity="bottom"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:hint="Player2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/playerone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/playeronewall"
+            android:backgroundTint="@color/black"
+            android:background="@color/transparent"
+            android:inputType="textPersonName|textCapWords"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:maxLength="6" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/buttonback"
+        android:fontFamily="sans-serif-light"
+        android:text="Continue"
+        android:textColor="@color/black"                      />
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="gray">#B1B0B3</color>
+    <color name="colorPrimar">#5B5C5E</color>
+
+    <color name="tint">#00FFFFFF</color>
+    <color name="yellow">#F3D06A</color>
+
+
+    <color name="tint2">#B9FFFFFF</color>
+    <color name="cardview_shadow_start_color">#00000000</color>
+
+    <color name="colorPrimary">#e5e9ea</color>
+    <color name="textcolor">#3b7df8</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="gr">#DC1C1C15</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

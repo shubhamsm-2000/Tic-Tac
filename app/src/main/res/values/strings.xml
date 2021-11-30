@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tic Tac</string>
+    <string name="WentWrong">Something Went Wrong</string>
+
+
+    <string name="lengthShort">Minimum Three Characters Required</string>
+
+</resources>
