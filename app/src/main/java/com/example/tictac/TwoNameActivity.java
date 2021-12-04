@@ -8,6 +8,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -19,6 +20,8 @@ public class TwoNameActivity extends AppCompatActivity {
     CharSequence player2= "Player 2";
 
     boolean selectedSinglePlayer=false;
+
+    EditText Age1, Age2, MobileNo1, MobileNo2;
 
 
     @Override
@@ -58,6 +61,15 @@ public class TwoNameActivity extends AppCompatActivity {
             }
         });
 
+        Age1=(EditText)findViewById(R.id.aage1);
+        MobileNo1=(EditText)findViewById(R.id.mmobile1);
+
+        Age2=(EditText)findViewById(R.id.aage2);
+        MobileNo2=(EditText)findViewById(R.id.mmobile2);
+
+
+
+
         Button button=(Button)findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +86,35 @@ public class TwoNameActivity extends AppCompatActivity {
 
     }
 
-      public void onBackedPressed()
+
+    public void ConnectingDatabase() {            // extends PlayerData<String s1, String n1 int a1>
+
+        final String TAG = "";
+        final String azuredatabaseName = "playerDatabase";
+        final String cointainerName = "playerRecords";
+
+        plyr1 = findViewById(R.id.playerone);
+        plyr2 = findViewById(R.id.playerone);
+        Age1 = (EditText) findViewById(R.id.aage);
+        Age2 = (EditText) findViewById(R.id.aage);
+        MobileNo1 = (EditText) findViewById(R.id.mmobile);
+        MobileNo2 = (EditText) findViewById(R.id.mmobile);
+
+        String finalName1 = plyr1.getText().toString();
+        String finalName2 = plyr2.getText().toString();
+        String finalMobile1 = MobileNo1.getText().toString();
+        String finalMobile2 = MobileNo2.getText().toString();
+        String finalAge1= Age1.getText().toString();
+        String finalAge2 = Age2.getText().toString();
+
+        int intAge1 = Integer.parseInt(finalAge1);
+        int intAge2 = Integer.parseInt(finalAge2);
+
+        PlayerData pData = new PlayerData(finalName1,finalName2,finalMobile1, finalMobile2, intAge1, intAge2);
+
+    }
+
+    public void onBackedPressed()
     {
 
         Intent i=new Intent(TwoNameActivity.this, MainActivity.class);

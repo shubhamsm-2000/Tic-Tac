@@ -8,14 +8,10 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class SingleName extends AppCompatActivity {
 
@@ -23,6 +19,8 @@ public class SingleName extends AppCompatActivity {
 
     CharSequence player1="1";
     CharSequence player2="2";
+
+    EditText age, mobileNo;
 
      public boolean selectedSinglePlayer=true;
      public int length;
@@ -51,6 +49,7 @@ public class SingleName extends AppCompatActivity {
 
             }
         });
+
 
 /*
         new Timer().scheduleAtFixedRate(new TimerTask() {
@@ -89,14 +88,35 @@ public class SingleName extends AppCompatActivity {
                     }
                 });
 
-
-
-
   //      }, 0, 20);//put here time 1000 milliseconds = 1 second
 
+}                   public void ConnectingDatabase() {            // extends PlayerData<String s1, String n1 int a1>
 
-}
-                @Override
+                    final String TAG = "";
+                    final String azuredatabaseName = "playerDatabase";
+                    final String cointainerName = "playerRecords";
+
+                 plyr1=  findViewById(R.id.playerone);
+                 age = (EditText) findViewById(R.id.aage);
+                 mobileNo = (EditText) findViewById(R.id.mmobile);
+
+
+                 String finalName=plyr1.getText().toString();
+                 String finalAge=age.getText().toString();
+                 String finalMobile=age.getText().toString();
+
+                 int intAge= Integer.parseInt(finalAge);
+
+                 PlayerData pData= new PlayerData(finalName, finalMobile,intAge);
+
+
+
+
+    }
+
+
+
+    @Override
                  public void onBackPressed() {
 
                  Intent i=new Intent(SingleName.this, MainActivity.class);
