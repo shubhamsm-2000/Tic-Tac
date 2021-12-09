@@ -1,6 +1,4 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
@@ -8,29 +6,42 @@ android {
 
     defaultConfig {
         applicationId "com.example.tictac"
-        minSdkVersion 21
+        minSdkVersion 27
         targetSdkVersion 30
         versionCode 3
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
+
+
 
     buildTypes {
         release {
+            crunchPngs false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+    packagingOptions{
+        exclude("META-INF/jersey-module-version")
+    }
+}
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.0'
+    api(group: "androidx.work", name: "work-runtime") {
+        version {
+            strictly "2.7.0-alpha04"
+        }
+    }
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation "androidx.constraintlayout:constraintlayout:2.1.2"
     testImplementation 'junit:junit:4.13.2'
@@ -40,5 +51,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
 
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
+
+
 }
