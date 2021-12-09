@@ -37,7 +37,7 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
-
+<!--
         <activity android:name="com.microsoft.identity.client.BrowserTabActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -50,7 +50,9 @@
                     android:path="/Yxc8cSzLlBHGghcHAzbXFx4jjZQ="
                     android:scheme="msauth" />
             </intent-filter>
-        </activity>
+        </activity>                              -->
+
+
     </application>
 
 </manifest>

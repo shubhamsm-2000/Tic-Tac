@@ -2,6 +2,8 @@ package com.example.tictac;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+/*    **here
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -21,33 +23,38 @@ import com.microsoft.identity.client.AuthenticationCallback; // Imports MSAL aut
 import com.microsoft.identity.client.*;
 import com.microsoft.identity.client.exception.*;
 
-import android.os.Bundle;
+import android.os.Bundle;      **here */
 
 public class Login extends AppCompatActivity {
 
+    /*
+
     private final static String[] SCOPES = {"Files.Read"};
-    /* Azure AD v2 Configs */
-    final static String AUTHORITY = "https://login.microsoftonline.com/common";
-    private ISingleAccountPublicClientApplication mSingleAccountApp;
 
-    private static final String TAG = MainActivity.class.getSimpleName();
 
-    /* UI & Debugging Variables */
+       final static String AUTHORITY = "https://login.microsoftonline.com/common";
+       private ISingleAccountPublicClientApplication mSingleAccountApp;
+
+       private static final String TAG = MainActivity.class.getSimpleName();
+
+
     Button signInButton;
     Button signOutButton;
     Button callGraphApiInteractiveButton;
     Button callGraphApiSilentButton;
     TextView logTextView;
-    TextView currentUserTextView;
+    TextView currentUserTextView;                  **here    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        initializeUI();
+     //   initializeUI();
 
-        PublicClientApplication.createSingleAccountPublicClientApplication(getApplicationContext(),
+    /*  **here
+
+      PublicClientApplication.createSingleAccountPublicClientApplication(getApplicationContext(),
                 R.raw.auth_config_single_account, new IPublicClientApplication.ISingleAccountApplicationCreatedListener() {
                     @Override
                     public void onCreated(ISingleAccountPublicClientApplication application) {
@@ -59,13 +66,16 @@ public class Login extends AppCompatActivity {
                     public void onError(MsalException exception) {
                         displayError(exception);
                     }
-                });
+                });             **here */
 
     }
 
 
     //When app comes to the foreground, load existing account to determine if user is signed in
-    private void loadAccount() {
+
+ /*   **here
+
+      private void loadAccount() {
         if (mSingleAccountApp == null) {
             return;
         }
@@ -160,23 +170,23 @@ public class Login extends AppCompatActivity {
         return new AuthenticationCallback() {
             @Override
             public void onSuccess(IAuthenticationResult authenticationResult) {
-                /* Successfully got a token, use it to call a protected resource - MSGraph */
+
                 Log.d(TAG, "Successfully authenticated");
-                /* Update UI */
+
                 updateUI(authenticationResult.getAccount());
-                /* call graph */
+
                 callGraphAPI(authenticationResult);
             }
 
             @Override
             public void onError(MsalException exception) {
-                /* Failed to acquireToken */
+
                 Log.d(TAG, "Authentication failed: " + exception.toString());
                 displayError(exception);
             }
             @Override
             public void onCancel() {
-                /* User canceled the authentication */
+
                 Log.d(TAG, "User cancelled login.");
             }
         };
@@ -263,6 +273,6 @@ public class Login extends AppCompatActivity {
                 .show();
     }
 
-
+     **here */
 
 }
