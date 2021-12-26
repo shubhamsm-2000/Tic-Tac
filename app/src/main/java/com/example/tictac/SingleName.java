@@ -197,7 +197,7 @@ public class SingleName extends AppCompatActivity {
 
         try{
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            ConnectionURL="jdbc:jtds:sqlserver://tictacserver.database.windows.net:1433;DatabaseName=TicTacProject;user=TicTacServerAdmin@tictacserver;password=Shubham2000@@;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+            ConnectionURL="jdbc:jtds:sqlserver://tictacserver.database.windows.net:1433;DatabaseName=TicTacProject;user=TicTacServerAdmin@tictacserver;password={******};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
             connection= DriverManager.getConnection(ConnectionURL);
         }
 
