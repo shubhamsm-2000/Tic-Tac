@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'TicTacGame'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_23651D4E17AF4907A2C7664F627DB980 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_33B4120338DA42C695643430F4127E7C }}
           package: '*.jar'
