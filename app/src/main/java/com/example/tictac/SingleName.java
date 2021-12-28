@@ -11,7 +11,9 @@ import android.os.StrictMode.ThreadPolicy;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -46,6 +48,7 @@ public class SingleName extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_name);
+
 
         plyr1 = findViewById(R.id.playerone);
         age = (EditText) findViewById(R.id.aage);
@@ -140,15 +143,11 @@ public class SingleName extends AppCompatActivity {
         @Override
         protected void onPostExecute(String r){
 
-            Toast.makeText(SingleName.this, r, Toast.LENGTH_LONG).show();
+            Toast.makeText(SingleName.this,r, Toast.LENGTH_LONG).show();
             if(isSuccess)
             {
-              //  userdata=(Textview) findViewById(R.id.userid);
-              //   userdata.setText(name1);
-
-                secretCode = (EditText) findViewById(R.id.secretCode);
-                secretCode.setText(name1);
-
+                plyr1=findViewById(R.id.playerone);
+                 plyr1.setText(name1);
 
             }
         }
@@ -160,15 +159,16 @@ public class SingleName extends AppCompatActivity {
                 con=connectionclass();
                 if(con==null)
                 {
-                    z="Check Your Internet Connection";
+                    z= "Check Your Internet Connection";
                 }
                 else{
-                    String query="Select * from Users";
+
+                    String query="Select Player_Name from Player Where Secret_Code like"+secretCode.getText().toString();
                     Statement stmt=con.createStatement();
                     ResultSet resultSet=stmt.executeQuery(query);
 
                     if(resultSet.next()){
-                        name1= resultSet.getString("UserName");        //****** getString("secret code")
+                        name1= resultSet.getString("Player_Name");        //****** getString("secret code")
                         z="Query Successful";
                         isSuccess=true;
                         con.close();
@@ -190,15 +190,17 @@ public class SingleName extends AppCompatActivity {
     @SuppressLint({"NewApi", "AuthLeak"})
     public Connection connectionclass(){
 
-    //    ThreadPolicy policy = new StrictMode.ThreadPolicy().Builder().permitAll().build();
+    //    StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy().Builder().permitAll().build();
     //    StrictMode.setThreadPolicy(policy);
         Connection connection=null;
         String ConnectionURL=null;
 
         try{
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
-            ConnectionURL="jdbc:jtds:sqlserver://tictacserver.database.windows.net:1433;DatabaseName=TicTacProject;user=TicTacServerAdmin@tictacserver;password={******};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+            ConnectionURL="jdbc:jtds:sqlserver://tictacserver.database.windows.net:1433;DatabaseName=TicTacProject;user=TicTacServerAdmin@tictacserver;password=Shubham2000@@;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
             connection= DriverManager.getConnection(ConnectionURL);
+
+
         }
 
         catch(SQLException se){
