@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".ImageAnalysis">
+
+    <ImageView
+        android:id="@+id/celeb"
+        android:layout_width="319dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/main" />
+
+    <TextView
+        android:id="@+id/celebResult"
+        android:layout_width="318dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="30dp"
+        android:hint="Result"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/celeb"
+        app:layout_constraintStart_toStartOf="@+id/celeb"
+        app:layout_constraintTop_toBottomOf="@+id/celeb" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/celebResult"
+        app:layout_constraintStart_toStartOf="@+id/celebResult"
+        app:layout_constraintTop_toBottomOf="@+id/celebResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>

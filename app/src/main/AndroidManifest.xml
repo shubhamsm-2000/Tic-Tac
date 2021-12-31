@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.tictac">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +19,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TicTacToe">
+        android:theme="@style/Theme.TicTacToe"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".computerVision"
+            android:exported="false" />
+        <activity
+            android:name=".ImageAnalysis"
+            android:exported="false" />
         <activity
             android:name=".Login"
             android:exported="false" />
@@ -22,8 +34,8 @@
         <activity android:name=".settingActivity" />
         <activity
             android:name=".SplashActivity"
-            android:screenOrientation="portrait"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="fullSensor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,22 +53,6 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />
-<!--
-        <activity android:name="com.microsoft.identity.client.BrowserTabActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data
-                    android:host="com.example.tictac"
-                    android:path="/Yxc8cSzLlBHGghcHAzbXFx4jjZQ="
-                    android:scheme="msauth" />
-            </intent-filter>
-        </activity>                              -->
-
-
     </application>
 
 </manifest>
