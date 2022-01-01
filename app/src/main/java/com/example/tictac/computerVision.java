@@ -52,7 +52,7 @@ public class computerVision extends AppCompatActivity {
 
 
         //Get Bitmap and add to Image View
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.img);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.billgate);
         btnProcess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)

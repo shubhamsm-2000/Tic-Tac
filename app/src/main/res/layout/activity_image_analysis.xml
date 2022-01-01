@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/main" />
+        tools:srcCompat="@drawable/billgate" />
 
     <TextView
         android:id="@+id/celebResult"
