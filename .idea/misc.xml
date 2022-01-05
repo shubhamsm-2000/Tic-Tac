@@ -4,14 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.23177083333333334" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/drawable/vision.xml" value="0.23177083333333334" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_choose.xml" value="0.18" />
-        <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_computer_vision.xml" value="0.215625" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_computer_vision.xml" value="0.2" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_game.xml" value="0.20102564102564102" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_image_analysis.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_main.xml" value="0.20102564102564102" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_setting.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_single_name.xml" value="0.22" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_splash.xml" value="0.1935185185185185" />
+        <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_splash_for_vision.xml" value="0.215625" />
         <entry key="..\:/Users/aditi/AndroidStudioProjects/TicTac/app/src/main/res/layout/activity_two_name.xml" value="0.22" />
       </map>
     </option>

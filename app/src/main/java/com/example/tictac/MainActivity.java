@@ -110,6 +110,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+            final ImageView computerVision = findViewById(R.id.vision);
+            computerVision.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, splashForVision.class);
+                    startActivity(intent);
+                }
+            });
 
 
 /*

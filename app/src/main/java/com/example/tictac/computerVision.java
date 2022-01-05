@@ -10,6 +10,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -19,14 +20,15 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 import com.microsoft.projectoxford.vision.VisionServiceClient;
 import com.microsoft.projectoxford.vision.VisionServiceRestClient;
-import com.microsoft.projectoxford.vision.contract.AnalysisResult;
-import com.microsoft.projectoxford.vision.contract.Caption;
 import com.microsoft.projectoxford.vision.rest.VisionServiceException;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import edmt.dev.edmtdevcognitivevision.Contract.AnalysisResult;
+import edmt.dev.edmtdevcognitivevision.Contract.Caption;
 
 public class computerVision extends AppCompatActivity {
 
@@ -45,14 +47,16 @@ public class computerVision extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_analysis);
 
+
         imageView = (ImageView)findViewById(R.id.image_view_object);
         btnCapture = (Button)findViewById(R.id.btn_capture_object);
         btnProcess = (Button)findViewById(R.id.btn_process_object);
         txtResult = (TextView)findViewById(R.id.text_result_object);
 
 
+
         //Get Bitmap and add to Image View
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.billgate);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.chess2);
         btnProcess.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -78,7 +82,7 @@ public class computerVision extends AppCompatActivity {
                         publishProgress("Recognizing...");
                         String[] features = {"Description"}; // Get description from API return result
                         String[] details={};
-                        AnalysisResult result = null;
+                        com.microsoft.projectoxford.vision.contract.AnalysisResult result = null;
                         try {
                             result = visionServiceClient.analyzeImage(inputStreams[0],features,details);
                         } catch (VisionServiceException | IOException e) {
@@ -91,7 +95,7 @@ public class computerVision extends AppCompatActivity {
                     @Override
                     protected void onPostExecute(String s) {
 
-                        AnalysisResult result = new Gson().fromJson(s,AnalysisResult.class);
+                        edmt.dev.edmtdevcognitivevision.Contract.AnalysisResult result = new Gson().fromJson(s, AnalysisResult.class);
                         StringBuilder result_Text = new StringBuilder();
                         for (Caption caption:result.description.captions)
                             result_Text.append(caption.text);
@@ -120,7 +124,6 @@ public class computerVision extends AppCompatActivity {
             }
         });
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -129,8 +132,7 @@ public class computerVision extends AppCompatActivity {
         Bitmap bitmap = (Bitmap)data.getExtras().get("data");
         imageView.setImageBitmap(bitmap);
 
-
-
-
     }
+
+
 }

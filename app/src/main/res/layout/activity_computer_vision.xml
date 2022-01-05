@@ -4,37 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back1"
     tools:context=".computerVision"
-    android:padding="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="50dp"
     >
 
     <ImageView
         android:id="@+id/image_view_object"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp" />
 
     <Button
         android:id="@+id/btn_capture_object"
-        android:layout_width="match_parent"
+        android:layout_width="233dp"
         android:layout_height="wrap_content"
-        android:text="Capture"
         android:layout_above="@+id/btn_process_object"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-6dp"
+        android:background="@drawable/buttonback"
+        android:text="Capture" />
 
     <Button
         android:id="@+id/btn_process_object"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Analyze"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonback"
+        android:text="Analyze" />
 
     <TextView
         android:id="@+id/text_result_object"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please click button to analyze any Image with Azure Cognitive Service"
         android:layout_above="@+id/btn_capture_object"
-        />
+        android:layout_marginBottom="20dp"
+        android:text="Please click button to analyze any Image with Azure Cognitive Service"
+        android:textSize="20sp" />
 
 </RelativeLayout>

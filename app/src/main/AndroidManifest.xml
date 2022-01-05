@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe">
         <activity
+            android:name=".splashForVision"
+            android:exported="false" />
+        <activity
             android:name=".computerVision"
             android:exported="false" />
         <activity
@@ -45,14 +48,6 @@
         <activity android:name=".ChooseActivity" />
         <activity android:name=".TwoNameActivity" />
         <activity android:name=".SingleName" />
-        <!--
-               <meta-data
-                   android:name="preloaded_fonts"
-                   android:resource="@array/preloaded_fonts" />
-             <meta-data
-                   android:name="com.google.android.gms.ads.APPLICATION_ID"
-                   android:value="ca-app-pub-3940256099942544~3347511713" />
-               -->
     </application>
 
 </manifest>
