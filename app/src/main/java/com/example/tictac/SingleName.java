@@ -163,7 +163,7 @@ public class SingleName extends AppCompatActivity {
                 }
                 else{
 
-                    String query="Select Player_Name from Player Where Secret_Code like"+secretCode.getText().toString();
+                    String query="SELECT [Player_Name], [Age] FROM [dbo].[Player] WHERE [Secret_Code] LIKE "+secretCode.getText().toString();
                     Statement stmt=con.createStatement();
                     ResultSet resultSet=stmt.executeQuery(query);
 
