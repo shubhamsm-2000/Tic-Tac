@@ -51,57 +51,12 @@ Now I am Laarning Cloud computing of Microsoft Azure.
  - [Azure Computer Vision](https://azure.microsoft.com/en-in/services/cognitive-services/computer-vision/#overview)
  - [Google AdMob](https://admob.google.com/home/)
 
-## Screenshots
-![App Screenshot](https://drive.google.com/file/d/1qWwXzl6b9und_DJSr_CDMf_imHjPUt1s/view?usp=sharing)
-
-![App Screenshot](https://drive.google.com/file/d/1i8hr8m0LHsk7oZsyWsTdjH2pGdjeDtXJ/view?usp=sharing)
-
-![App Screenshot](https://drive.google.com/file/d/1TTJfTNi9nmYOojWCuruhh096shw8TrnE/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1VhZGo3Bw3h2l5DKPyB-78RYm4rfGLh7r/view?usp=sharing)
-
-![App Screenshot](https://drive.google.com/file/d/1D9Iwd5H7xzJg0TAdVNKAjUikZulS60Xb/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/18JpFNp9yF4h5_7SK-bDojN80K7CDO46S/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1qsVtnax7FN6icEix665YeaSK_NLYO1Bq/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1YgAiUBvyaucrFfIQTpa3XhVsGvMjgO3L/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1yoNYNa0BnJ5hmYwo8wPmQeb-yZNl85Wd/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1c6fCV_urkpnmA5aMQdvB4Fv2DP1Gxa8W/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1Q39xvIh84OzbPU3JxA9EyQSLLqmTAFmb/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1qiRUIq93pfqS5mnBffdOcC3o2-SgaDQl/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1fWZ1_j_j_4HhKqjV6gr5xLfKJO4ZdkgV/view?usp=sharing
-)
-
-
-![App Screenshot](https://drive.google.com/file/d/1Fh-hLp3QTMiAJhd8GMzapPvMG_qQfjlO/view?usp=sharing
-)
-
-![App Screenshot](https://drive.google.com/file/d/1qsVtnax7FN6icEix665YeaSK_NLYO1Bq/view?usp=sharing
-)
-
-
 
 
 ## Demo Video Link Of Application:-
+This is the Demo Video of My Application:-
 
 https://drive.google.com/file/d/1qWwXzl6b9und_DJSr_CDMf_imHjPUt1s/view?usp=sharing
-
 
 ## Tech Stack
 
@@ -115,4 +70,38 @@ https://drive.google.com/file/d/1qWwXzl6b9und_DJSr_CDMf_imHjPUt1s/view?usp=shari
 
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-mishra-77075a1a9)
+
+
+
+## Screenshots
+
+![Screenshot_20220106_025417](https://user-images.githubusercontent.com/81998449/148306676-6331d68a-798c-4f60-9632-af76556b06ce.jpg)
+
+![Screenshot_20220106_025426](https://user-images.githubusercontent.com/81998449/148306707-a318cc3a-f94e-4010-8763-a0fe3c0df1e1.jpg)
+
+![Screenshot_20220106_025432](https://user-images.githubusercontent.com/81998449/148306724-838496dc-ff96-4a8c-bb86-e7f46e1e01f1.jpg)
+
+![Screenshot_20220106_025439](https://user-images.githubusercontent.com/81998449/148306739-ab8d2cf7-ddcd-45bc-966e-87cf6e93c0d9.jpg)
+
+![Screenshot_20220106_025457](https://user-images.githubusercontent.com/81998449/148306755-f91bf55a-aa31-4a0e-9f4e-1839484a86e8.jpg)
+
+![Screenshot_20220106_025602](https://user-images.githubusercontent.com/81998449/148306768-b5a7dc71-6c9e-4feb-a436-dbd3adeea8e5.jpg)
+
+![Screenshot_20220106_025621](https://user-images.githubusercontent.com/81998449/148306888-567bf856-8873-4232-8556-97dcdf3ce9e7.jpg)
+
+![Screenshot_20220106_025628](https://user-images.githubusercontent.com/81998449/148306895-e0edf798-9167-4229-ada6-0114fae930cb.jpg)
+
+![Screenshot_20220106_025634](https://user-images.githubusercontent.com/81998449/148306918-f4ad00cc-eae6-4ca4-bb5d-73fb63ed25dd.jpg)
+
+![Screenshot_20220106_025647](https://user-images.githubusercontent.com/81998449/148306926-f5b84dd7-3419-4819-9bd1-b3f8e99c12c1.jpg)
+
+![Screenshot_20220106_025654](https://user-images.githubusercontent.com/81998449/148306939-600f05ec-4b59-468b-9f73-296e379fa8b9.jpg)
+
+![Screenshot_20220106_025659](https://user-images.githubusercontent.com/81998449/148306951-afb8298c-a5e7-4ada-9c70-1145077e2543.jpg)
+
+![Screenshot_20220106_025705](https://user-images.githubusercontent.com/81998449/148306961-0366ea56-1462-459f-9164-6c5909a1b8cc.jpg)
+
+![Screenshot_20220106_025710](https://user-images.githubusercontent.com/81998449/148307310-3f98d400-cc80-4fad-a4cf-d0b5a3be8c22.jpg)
+
+
 
